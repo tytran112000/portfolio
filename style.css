@@ -1,0 +1,189 @@
+html, 
+body {
+    height: 100%;
+    font-family: "Tilt Warp", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#name{
+    font-size: 4em;
+}
+.char{
+    transform: translateY(-115px);
+    transition: transform .5s;
+}
+
+span:hover,
+span:focus{
+    color: #888888;
+}
+
+.sidebar{
+    top: 35%;
+    left: -8%;
+}
+li > a.linkedin{
+    background-color: #007bb5;
+    font-size: 1.125em;
+}
+li > a.linkedin:hover, li > a.github:hover, li > a.contact:hover{
+    transform: translateX(55%);
+}
+
+li > a.github{
+    background-color: #404040;
+    font-size: 1.125em;
+}
+li > a.contact{
+    background-color: #f0ad4e;
+    font-size: 1.125em;
+}
+li > a.linkedin, li > a.github, li > a.contact {
+    padding: 1em;
+    transition: all 0.2s ease-in;
+}
+
+li > a > i:not(.fa-arrow-down) {
+    margin-left: .5em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#detail{
+    transition: all 0.5s ease-in;
+}
+.animate-out{
+    color: #eab308;
+}
+
+@media(max-width: 576px){
+    #name{
+        font-size: 3em;
+        line-height: 1.25;
+    }
+    #cards-container{
+        width: 75%;
+        margin: 0 auto;
+    }
+    #detail{
+        font-size: .75em;
+    }
+    .sidebar{
+        top: 0%;
+        left: 0%;
+    }
+    ul{
+        padding-left: 0;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    li > a.linkedin, li > a.github, li > a.contact{
+        width: calc(100vw / 3);
+        font-size: 1em;
+    }
+    li > a.linkedin:hover, li > a.github:hover, li > a.contact:hover{
+        transform: translateX(0%);
+        transform: translateY(5%);
+    }
+    .btn{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    #name{
+        font-size: 4em;
+        line-height: 1.25;
+    }
+    #detail{
+        font-size: .75em;
+    }
+    .sidebar{
+        top: 0%;
+        left: 0%;
+    }
+    ul{
+        padding-left: 0;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+    li > a.linkedin, li > a.github, li > a.contact{
+        width: calc(100vw / 3);
+        font-size: 1em;
+    }
+    li > a.linkedin:hover, li > a.github:hover, li > a.contact:hover{
+        transform: translateX(0%);
+        transform: translateY(5%);
+    }
+    .btn{
+        font-size: 1em;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    #name{
+        font-size: 5em;
+        line-height: 1.25;
+    }
+    #card-container{
+        width: 75%;
+    }
+    #detail{
+        font-size: 1em;
+    }
+    ul{
+        padding-left: 0;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+    
+    li > a.linkedin, li > a.github, li > a.contact{
+        width: calc(100vw / 3);
+        font-size: 1.5em;
+    }
+    .sidebar{
+        top: 0;
+        left: 0;
+    }
+    .btn{
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 992px) and (max-width: 1080px){
+    #name{
+        font-size: 3em;
+        line-height: 1.25;
+    }
+    #card-container{
+        width: 75%;
+    }
+    #detail{
+        font-size: .75em;
+    }
+    ul{
+        padding-left: 0;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sidebar{
+        top: 40%;
+        left: -25%;
+    }
+    .btn{
+        font-size: 1.75em;
+    }
+}
