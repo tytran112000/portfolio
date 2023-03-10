@@ -18,12 +18,29 @@
             <li class="d-flex flex-row d-sm-flex flex-sm-row d-md-flex flex-md-row d-lg-flex flex-lg-column d-xl-flex flex-xl-column">
                 <a class="linkedin d-flex justify-content-between align-items-center" href="https://www.linkedin.com/in/tyler-tran-h/" target="_blank">Linkedin<i class="fa-brands fa-linkedin fa-2xl"></i></a>
                 <a class="github d-flex justify-content-between align-items-center" href="https://github.com/tytran112000" target="_blank">GitHub<i class="fa-brands fa-square-github fa-2xl"></i></a>
-                <a class="contact d-flex justify-content-between align-items-center" href="#">Contact<i class="fa-solid fa-address-card fa-xl"></i></a>
+                <a class="contact d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-target="#myModal" id="contact-btn">Contact<i class="fa-solid fa-address-card fa-xl"></i></a>
             </li>
         </ul>
     </div>
-    
-    
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes to this document before closing?</p>
+                    <p class="text-secondary"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid d-flex justify-content-center align-items-center ">
         <div class="introduction ">
             <div class=" text-white text-center my-0" id="name">HI, MY NAME IS TUNG TRAN</div>

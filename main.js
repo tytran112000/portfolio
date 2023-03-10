@@ -9,3 +9,9 @@ detail.addEventListener("mouseout", function(){
     detail.textContent = "I'M A WEB DEVELOPER AND DESIGNER BASED IN THE UNITED STATES"
     detail.classList.add("animate-out")
 })
+
+
+const myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
+document.onreadystatechange = function () {
+  myModal.show();
+};
